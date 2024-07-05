@@ -1,4 +1,3 @@
-<h1>List détails</h1>
 <%= @list.name %>
 
 
@@ -10,7 +9,6 @@
       <h5 class="card-title"><%= bookmark.movie.title %></h5>
       <p class="card-text"><%= bookmark.comment %></p>
       <%= link_to 'Delete the bookmark', [@list, bookmark], data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-
     </div>
   </div>
 
